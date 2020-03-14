@@ -3,18 +3,9 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-const request = "https://api.hgbrasil.com/finance?key=8f9908d7";
+const request = "https://api.hgbrasil.com/finance?key={INFORME_SUA_CHAVE}";
 
-void main() async {
-
-//  http.Response response = await http.get(request);
-//  double valorBTCCompra = json.decode(response.body)["results"]["currencies"]["BTC"]["buy"];
-//  double valorBTCVenda = json.decode(response.body)["results"]["currencies"]["BTC"]["sell"];
-//
-//  print(json.decode(response.body)["results"]["currencies"]["BTC"]["buy"]);
-//  print("BTC Compra: ${valorBTCCompra} - BTC Venda: ${valorBTCVenda}");
-
-  
+void main() async {  
   runApp(MaterialApp(
     home: Home(),
     theme: ThemeData(
